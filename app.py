@@ -101,7 +101,7 @@ def main():
     col1, col2 = st.columns(2)
     with col1:
         st.subheader("Input")
-        st.image(img, use_column_width=True)
+        st.image(img, use_container_width=True)
 
     # Inference
     st.subheader("Prediction")
@@ -123,7 +123,7 @@ def main():
 
     with col2:
         st.subheader("Annotated")
-        st.image(annotated_rgb, use_column_width=True)
+        st.image(annotated_rgb, use_container_width=True)
         if save_annot:
             buf = io.BytesIO()
             Image.fromarray(annotated_rgb).save(buf, format="PNG")
