@@ -59,7 +59,7 @@ def annotate_result(res):
 
 def main():
     st.set_page_config(page_title="Object Detection – Mac & Jetson-ready", layout="wide")
-    st.title("📦 Object Detection Demo")
+    st.title("📦 HCLTech VisionX : Object Detection Demo")
     st.caption(
         "Upload an image to see predictions from a YOLO model. "
         "Choose the built-in **YOLOv8n** demo or your own weights."
